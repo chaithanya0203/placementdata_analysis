@@ -42,7 +42,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load data
-@st.cache
+@st.cache_data
 def load_data():
     df = pd.read_csv('placementdata.csv')
     return df
